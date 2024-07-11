@@ -11,9 +11,9 @@ datasets:
     train:
     name: DIV2K
     type: PairedImageDataset
-    dataroot_gt: /lxy/lxy/DIV2K/DIV2K_train_HR_sub
-    dataroot_lq: /lxy/lxy/DIV2K/DIV2K_train_LR_bicubic_sub
-    meta_info_file: /lxy/lxy/DIV2K/DIV2Ksub_GT.txt
+    dataroot_gt: datasets/train_datasets/DIV2K/DIV2K_train_HR_sub
+    dataroot_lq: datasets/train_datasets/DIV2K/DIV2K_train_LR_bicubic_sub
+    meta_info_file: datasets/train_datasets/DIV2K//DIV2Ksub_GT.txt
     filename_tmpl: '{}'
     io_backend:
       type: disk
@@ -31,16 +31,16 @@ datasets:
   val_1:
     name: Set5
     type: PairedImageDataset
-    dataroot_gt: /lxy/lxy/test_dataset/Set5/GTmod12
-    dataroot_lq: /lxy/lxy/test_dataset/Set5/LRbicx4
+    dataroot_gt: datasets/test_datasets/Set5/GTmod12
+    dataroot_lq: datasets/test_datasets/Set5/LRbicx4
     io_backend:
       type: disk
       
   val_2:
     name: Set14
     type: PairedImageDataset
-    dataroot_gt: /lxy/lxy/test_dataset/Set14/GTmod12
-    dataroot_lq: /lxy/lxy/test_dataset/Set14/LRbicx4
+    dataroot_gt: datasets/test_datasets/Set14/GTmod12
+    dataroot_lq: datasets/test_datasets/Set14/LRbicx4
     io_backend:
       type: disk
 
