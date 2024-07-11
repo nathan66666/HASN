@@ -1,7 +1,7 @@
 # AECSR
 
 ## Overview framework
-![acesr](figs/acesr.png)
+![acesr](figs/aecsr.png)
 
 ## Dependencies and Installation
 ```
@@ -24,7 +24,6 @@ You can put the testing images in the `datasets/test_datasets`.
 #### Step 3: Running testing command
 ```
 python basicsr/test.py -opt options/test/test_AECSR.yml
-
 ```
 ## Train 
 
