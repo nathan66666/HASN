@@ -177,13 +177,13 @@ def pixelshuffle_block(in_channels,
 
 
 @ARCH_REGISTRY.register()
-class AECSR(nn.Module):
+class HASN(nn.Module):
     def __init__(self,
                  in_channels=3,
                  out_channels=3,
                  feature_channels=52,
                  upscale=4):
-        super(AECSR, self).__init__()
+        super(HASN, self).__init__()
 
         self.conv_1 = conv_layer(in_channels,
                                        feature_channels,

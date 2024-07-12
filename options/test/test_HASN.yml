@@ -1,5 +1,5 @@
 # general settings
-name: test_AECSR
+name: test_HASN
 model_type: SRModel
 scale: 4
 num_gpu: 1
@@ -50,13 +50,13 @@ datasets:
 
 # network structures
 network_g:
-  type: AECSR
+  type: HASN
   upscale: 4
 
 
 # path
 path:
-  pretrain_network_g: experiments/AECSR.pth
+  pretrain_network_g: experiments/HASN.pth
   strict_load_g: true
   resume_state: ~
 

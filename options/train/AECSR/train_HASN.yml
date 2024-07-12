@@ -1,5 +1,5 @@
 # general settings
-name: train_AECSR
+name: train_HASN
 model_type: SRModel
 scale: 4
 num_gpu: 1
@@ -46,7 +46,7 @@ datasets:
 
 # network structures
 network_g:
-  type: AECSR
+  type: HASN
   upscale: 4
 
 

@@ -1,38 +1,38 @@
-# AECSR
+# HASN
 
 ## Overview framework
-![acesr](figs/aecsr.png)
+![hasn](figs/HASN.png)
 
 ## Dependencies and Installation
 ```
 ## git clone this repository
-git clone https://github.com/nathan66666/AECSR.git
-cd AECSR
+git clone https://github.com/nathan66666/HASN.git
+cd HASN
 
 # create an environment with python=3.9
-conda create -n acesr python=3.9.17
-conda activate acesr
+conda create -n hasn python=3.9.17
+conda activate hasn
 pip install -r requirements.txt
 ```
 
 ## Quick Inference
 #### Step 1: Download the pretrained models
-- Download the pretrained AECSR model from [GoogleDrive](https://drive.google.com/file/d/1MOTJWK1I_n9tV1KNNrc5JfExPTrDfsB8/view?usp=drive_link)
+You can put the  HASN model  in the `experiments`.
 #### Step 2: Prepare testing data
 You can put the testing images in the `datasets/test_datasets`.
 
 #### Step 3: Running testing command
 ```
-python basicsr/test.py -opt options/test/test_AECSR.yml
+python basicsr/test.py -opt options/test/test_HASN.yml
 ```
 ## Train 
 
 #### Step1: Prepare training data
 - Download the training data from (https://github.com/XPixelGroup/BasicSR/blob/master/docs/DatasetPreparation.md)
 
-#### Step2: Training for AECSR
+#### Step2: Training for HASN
 ```
-CUDA_VISIBLE_DEVICES=0 python basicsr/train.py -opt /options/train/AECSR/train_AECSR.yml
+CUDA_VISIBLE_DEVICES=0 python basicsr/train.py -opt /options/train/HASN/train_HASN.yml
 ```
 
 
